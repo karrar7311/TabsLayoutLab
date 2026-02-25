@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="select_color">Sélectionner la couleur</string>
+    <string name="green">Vert</string>
+    <string name="yellow">Jaune</string>
+
+</resources>
