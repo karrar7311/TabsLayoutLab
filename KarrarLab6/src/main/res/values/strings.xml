@@ -14,4 +14,10 @@ Student ID: n01641132
     <string name="red">Red</string>
     <string name="other">Other</string>
     <string name="submit">Submit</string>
+    <string name="hockey">Hockey</string>
+    <string name="basketball">Basketball</string>
+    <string name="baseball">Baseball</string>
+    <string name="sport_btn">SPORT</string>
+    <string name="selected_sports">Selected Sports</string>
+    <string name="no_sport">NO SPORT</string>
 </resources>

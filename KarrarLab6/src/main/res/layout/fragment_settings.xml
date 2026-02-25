@@ -9,12 +9,61 @@
         android:id="@+id/karResultTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/fragment2_title"
-        android:textColor="@color/gray"
+        android:text="NO DATA"
         android:textSize="20sp"
+        android:textColor="@android:color/darker_gray"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="120dp"/>
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <CheckBox
+        android:id="@+id/karHockeyCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hockey"
+        android:textStyle="bold|italic"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/karResultTV"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"/>
+
+    <CheckBox
+        android:id="@+id/karBasketCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/basketball"
+        android:textStyle="bold|italic"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/karHockeyCB"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"/>
+
+    <CheckBox
+        android:id="@+id/karBaseballCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/baseball"
+        android:textStyle="bold|italic"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/karBasketCB"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/karSportBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sport_btn"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/karBaseballCB"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
