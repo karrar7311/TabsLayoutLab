@@ -8,4 +8,10 @@ Student ID: n01641132
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="fragment1_title">Fragment 1</string>
     <string name="fragment2_title">Fragment 2</string>
+    <string name="select_color">Select Color</string>
+    <string name="green">Green</string>
+    <string name="yellow">Yellow</string>
+    <string name="red">Red</string>
+    <string name="other">Other</string>
+    <string name="submit">Submit</string>
 </resources>
