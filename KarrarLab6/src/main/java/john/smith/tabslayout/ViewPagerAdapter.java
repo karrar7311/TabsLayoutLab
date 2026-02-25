@@ -1,3 +1,7 @@
+/*
+Name: Karrar Mahmood
+Student ID: n01641132
+*/
 package john.smith.tabslayout;
 
 // ViewPagerAdapter.java

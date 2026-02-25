@@ -1,3 +1,7 @@
+/*
+Name: Karrar Mahmood
+Student ID: n01641132
+*/
 package john.smith.tabslayout;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,13 +26,12 @@ public class KarrarActivity6 extends AppCompatActivity {
         fragmentList.add(new Leftka());
         fragmentList.add(new RightMa());
 
-        ViewPager2 viewPager = findViewById(R.id.viewPager);
+        ViewPager2 viewPager = findViewById(R.id.karViewPager);
         viewPager.setAdapter(new ViewPagerAdapter(this, fragmentList));
 
-        TabLayout tabLayout = findViewById(R.id.tabLayout);
+        TabLayout tabLayout = findViewById(R.id.karTabLayout);
         new TabLayoutMediator(tabLayout, viewPager,
                 (tab, position) -> {
-                    // Customize the tab name based on position/index
                     tab.setText("Tab " + (position + 1));
                 }
         ).attach();

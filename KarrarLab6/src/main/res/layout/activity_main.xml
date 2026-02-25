@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout"
+        android:id="@+id/karTabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabSelectedTextColor="@color/black"
@@ -17,9 +17,9 @@
         android:layout_alignParentTop="true"/>
 
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager"
+        android:id="@+id/karViewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/tabLayout" />
+        android:layout_below="@id/karTabLayout" />
 
 </RelativeLayout>

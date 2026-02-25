@@ -1,5 +1,11 @@
+<!--
+Name: Karrar Mahmood
+Student ID: n01641132
+-->
 <resources>
     <string name="app_name">TabsLayout</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment1_title">Fragment 1</string>
+    <string name="fragment2_title">Fragment 2</string>
 </resources>
