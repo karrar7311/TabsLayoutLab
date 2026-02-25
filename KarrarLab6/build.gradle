@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'john.smith.tabslayout'
+    namespace 'karrar.mahmood.tabslayout'
     compileSdk 36
 
     defaultConfig {
-        applicationId "john.smith.tabslayout"
+        applicationId "karrar.mahmood.tabslayout"
         minSdk 31
         targetSdk 36
         versionCode 1
