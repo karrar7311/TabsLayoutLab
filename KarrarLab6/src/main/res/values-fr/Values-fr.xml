@@ -1,7 +1,33 @@
+<!--
+Name: Karrar Mahmood
+Student ID: n01641132
+-->
 <resources>
 
-    <string name="select_color">Sélectionner la couleur</string>
-    <string name="green">Vert</string>
-    <string name="yellow">Jaune</string>
+    <string name="app_name">KarrarLab6</string>
+
+    <string name="tab1">TAB 1</string>
+    <string name="tab2">TAB 2</string>
+
+    <string name="select_color">Select Color</string>
+
+    <string name="green">Green</string>
+    <string name="yellow">Yellow</string>
+    <string name="red">Red</string>
+    <string name="other">Other</string>
+
+    <string name="submit">SUBMIT</string>
+
+    <string name="no_data">NO DATA</string>
+
+    <string name="hockey">Hockey</string>
+    <string name="basketball">Basketball</string>
+    <string name="baseball">Baseball</string>
+
+    <string name="sport_btn">SPORT</string>
+    <string name="selected_sports">Selected Sports</string>
+    <string name="no_sport">NO SPORT</string>
+
+    <string name="ok">OK</string>
 
 </resources>

@@ -23,16 +23,17 @@ public class KarrarActivity6 extends AppCompatActivity {
         fragmentList.add(new LeftKa());
         fragmentList.add(new RightMa());
 
-        ViewPager2 viewPager = findViewById(R.id.karViewPager);
-        viewPager.setAdapter(new ViewPagerAdapter(this, fragmentList));
+        ViewPager2 karViewPager = findViewById(R.id.karViewPager);
+        karViewPager.setAdapter(new ViewPagerAdapter(this, fragmentList));
 
-        TabLayout tabLayout = findViewById(R.id.karTabLayout);
-        new TabLayoutMediator(tabLayout, viewPager,
+        TabLayout karTabLayout = findViewById(R.id.karTabLayout);
+
+        new TabLayoutMediator(karTabLayout, karViewPager,
                 (tab, position) -> {
                     if(position == 0)
                         tab.setText(getString(R.string.tab1));
                     else
                         tab.setText(getString(R.string.tab2));
-                }        ).attach();
+                }).attach();
     }
 }

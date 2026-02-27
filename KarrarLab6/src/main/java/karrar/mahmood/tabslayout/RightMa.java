@@ -6,10 +6,10 @@ package karrar.mahmood.tabslayout;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import android.view.*;
 import android.widget.*;
+import androidx.core.content.ContextCompat;
 
 public class RightMa extends Fragment {
 
@@ -33,15 +33,26 @@ public class RightMa extends Fragment {
 
         karResultTV.setText(getString(R.string.no_data));
         karResultTV.setTextColor(
-                ContextCompat.getColor(requireContext(), android.R.color.darker_gray)
+                ContextCompat.getColor(getContext(), android.R.color.darker_gray)
         );
 
         getParentFragmentManager().setFragmentResultListener(
                 "requestKey",
                 this,
                 (requestKey, bundle) -> {
+
                     String color = bundle.getString("color");
+
                     karResultTV.setText(color);
+
+                    if(color.equals(getString(R.string.green)))
+                        karResultTV.setTextColor(ContextCompat.getColor(getContext(), android.R.color.holo_green_dark));
+                    else if(color.equals(getString(R.string.yellow)))
+                        karResultTV.setTextColor(ContextCompat.getColor(getContext(), android.R.color.holo_orange_light));
+                    else if(color.equals(getString(R.string.red)))
+                        karResultTV.setTextColor(ContextCompat.getColor(getContext(), android.R.color.holo_red_dark));
+                    else
+                        karResultTV.setTextColor(ContextCompat.getColor(getContext(), android.R.color.black));
                 });
 
         karSportBTN.setOnClickListener(v -> {

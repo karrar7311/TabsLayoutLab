@@ -4,30 +4,30 @@ Student ID: n01641132
 -->
 <resources>
 
-    <string name="app_name" translatable="false">TabsLayout</string>
+    <string name="app_name">KarrarLab6</string>
 
-    <!-- TAB TITLES -->
-    <string name="tab1" translatable="false">TAB 1</string>
-    <string name="tab2" translatable="false">TAB 2</string><![CDATA[
+    <string name="tab1">TAB 1</string>
+    <string name="tab2">TAB 2</string>
 
-    ]]><!-- TAB 1 -->
     <string name="select_color">Select Color</string>
+
     <string name="green">Green</string>
     <string name="yellow">Yellow</string>
-    <string name="red" translatable="false">Red</string>
-    <string name="other" translatable="false">Other</string>
-    <string name="submit" translatable="false">Submit</string>
+    <string name="red">Red</string>
+    <string name="other">Other</string>
 
-    <!-- TAB 2 -->
-    <string name="no_data" translatable="false">NO DATA</string>
-    <string name="hockey" translatable="false">Hockey</string>
-    <string name="basketball" translatable="false">Basketball</string>
-    <string name="baseball" translatable="false">Baseball</string>
-    <string name="sport_btn" translatable="false">SPORT</string>
+    <string name="submit">SUBMIT</string>
 
-    <!-- ALERT DIALOG -->
-    <string name="selected_sports" translatable="false">Selected Sports</string>
-    <string name="no_sport" translatable="false">NO SPORT</string>
-    <string name="ok" translatable="false">OK</string>
+    <string name="no_data">NO DATA</string>
+
+    <string name="hockey">Hockey</string>
+    <string name="basketball">Basketball</string>
+    <string name="baseball">Baseball</string>
+
+    <string name="sport_btn">SPORT</string>
+    <string name="selected_sports">Selected Sports</string>
+    <string name="no_sport">NO SPORT</string>
+
+    <string name="ok">OK</string>
 
 </resources>

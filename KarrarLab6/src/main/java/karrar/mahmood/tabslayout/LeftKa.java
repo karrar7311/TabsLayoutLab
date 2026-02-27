@@ -26,12 +26,14 @@ public class LeftKa extends Fragment {
 
             int selectedId = karRadioGroup.getCheckedRadioButtonId();
             RadioButton selectedRB = view.findViewById(selectedId);
+
             String selectedColor = selectedRB.getText().toString();
 
             Toast.makeText(getContext(), selectedColor, Toast.LENGTH_LONG).show();
 
             Bundle result = new Bundle();
             result.putString("color", selectedColor);
+
             getParentFragmentManager().setFragmentResult("requestKey", result);
         });
 
