@@ -6,6 +6,7 @@ package karrar.mahmood.tabslayout;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import android.view.*;
 import android.widget.*;
@@ -30,14 +31,15 @@ public class RightMa extends Fragment {
         karBaseballCB = view.findViewById(R.id.karBaseballCB);
         karSportBTN = view.findViewById(R.id.karSportBTN);
 
-        karResultTV.setText("NO DATA");
-        karResultTV.setTextColor(getResources().getColor(android.R.color.darker_gray));
+        karResultTV.setText(getString(R.string.no_data));
+        karResultTV.setTextColor(
+                ContextCompat.getColor(requireContext(), android.R.color.darker_gray)
+        );
 
         getParentFragmentManager().setFragmentResultListener(
                 "requestKey",
                 this,
                 (requestKey, bundle) -> {
-
                     String color = bundle.getString("color");
                     karResultTV.setText(color);
                 });
@@ -47,21 +49,21 @@ public class RightMa extends Fragment {
             String selected = "";
 
             if (karHockeyCB.isChecked())
-                selected += "Hockey\n";
+                selected += getString(R.string.hockey) + "\n";
 
             if (karBasketCB.isChecked())
-                selected += "Basketball\n";
+                selected += getString(R.string.basketball) + "\n";
 
             if (karBaseballCB.isChecked())
-                selected += "Baseball\n";
+                selected += getString(R.string.baseball) + "\n";
 
             if (selected.isEmpty())
-                selected = "NO SPORT";
+                selected = getString(R.string.no_sport);
 
             new AlertDialog.Builder(getContext())
-                    .setTitle("Selected Sports")
+                    .setTitle(getString(R.string.selected_sports))
                     .setMessage(selected)
-                    .setPositiveButton("OK", null)
+                    .setPositiveButton(getString(R.string.ok), null)
                     .show();
         });
 

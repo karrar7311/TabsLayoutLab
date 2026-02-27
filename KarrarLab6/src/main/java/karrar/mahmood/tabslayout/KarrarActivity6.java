@@ -28,7 +28,11 @@ public class KarrarActivity6 extends AppCompatActivity {
 
         TabLayout tabLayout = findViewById(R.id.karTabLayout);
         new TabLayoutMediator(tabLayout, viewPager,
-                (tab, position) -> tab.setText("Tab " + (position + 1))
-        ).attach();
+                (tab, position) -> {
+                    if(position == 0)
+                        tab.setText(getString(R.string.tab1));
+                    else
+                        tab.setText(getString(R.string.tab2));
+                }        ).attach();
     }
 }
