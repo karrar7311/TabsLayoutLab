@@ -49,4 +49,9 @@ is displayed.
 
 ## Status
 
+
+## Application Screenshot
+
+![TAB 1 Screenshot](image/tab1.png)
+
 Application compiles successfully and runs without crashing.
