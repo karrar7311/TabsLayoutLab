@@ -13,7 +13,6 @@
         app:tabIndicatorColor="@color/tabIndicatorColor"
         app:tabIndicatorFullWidth="true"
         style="@style/TabLayoutTextStyle"
-        app:tabBackground="@drawable/tab_background_selector"
         android:layout_alignParentTop="true"/>
 
     <androidx.viewpager2.widget.ViewPager2
