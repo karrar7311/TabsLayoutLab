@@ -1,64 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<!--
+Name: Karrar Mahmood
+Student ID: n01641132
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
 
+    <!-- NAME -->
     <TextView
-        android:id="@+id/karSelectTV"
+        android:id="@+id/karNameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/full_name"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="8dp"/>
+
+    <!-- DIVIDER -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- SELECT COLOR -->
+    <TextView
+        android:id="@+id/karSelectColorTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/select_color"
-        android:textSize="20sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="20dp"/>
+        android:text="@string/select_color_title"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
 
+    <!-- RADIO GROUP -->
     <RadioGroup
         android:id="@+id/karRadioGroup"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/karSelectTV"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp">
+        android:layout_height="wrap_content">
 
         <RadioButton
             android:id="@+id/karGreenRB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/green"
+            android:textColor="@android:color/holo_green_dark"
             android:checked="true"/>
 
         <RadioButton
             android:id="@+id/karYellowRB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/yellow"/>
+            android:text="@string/yellow"
+            android:textColor="@android:color/holo_orange_dark"/>
 
         <RadioButton
             android:id="@+id/karRedRB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/red"/>
+            android:text="@string/red"
+            android:textColor="@android:color/holo_red_dark"/>
 
         <RadioButton
             android:id="@+id/karOtherRB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/other"/>
+
     </RadioGroup>
 
+    <!-- SUBMIT BUTTON -->
     <Button
         android:id="@+id/karSubmitBTN"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/submit"
-        app:layout_constraintTop_toBottomOf="@id/karRadioGroup"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="20dp"/>
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
