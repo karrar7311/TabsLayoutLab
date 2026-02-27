@@ -5,11 +5,11 @@ Student ID: n01641132
 package karrar.mahmood.tabslayout;
 
 import android.app.AlertDialog;
+import android.graphics.Color;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.view.*;
 import android.widget.*;
-import androidx.core.content.ContextCompat;
 
 public class RightMa extends Fragment {
 
@@ -32,9 +32,7 @@ public class RightMa extends Fragment {
         karSportBTN = view.findViewById(R.id.karSportBTN);
 
         karResultTV.setText(getString(R.string.no_data));
-        karResultTV.setTextColor(
-                ContextCompat.getColor(getContext(), android.R.color.darker_gray)
-        );
+        karResultTV.setTextColor(Color.GRAY);
 
         getParentFragmentManager().setFragmentResultListener(
                 "requestKey",
@@ -43,16 +41,16 @@ public class RightMa extends Fragment {
 
                     String color = bundle.getString("color");
 
-                    karResultTV.setText(color);
+                    karResultTV.setText(getString(R.string.color_selected) + color);
 
-                    if(color.equals(getString(R.string.green)))
-                        karResultTV.setTextColor(ContextCompat.getColor(getContext(), android.R.color.holo_green_dark));
-                    else if(color.equals(getString(R.string.yellow)))
-                        karResultTV.setTextColor(ContextCompat.getColor(getContext(), android.R.color.holo_orange_light));
-                    else if(color.equals(getString(R.string.red)))
-                        karResultTV.setTextColor(ContextCompat.getColor(getContext(), android.R.color.holo_red_dark));
+                    if(color.equals("Green"))
+                        karResultTV.setTextColor(Color.GREEN);
+                    else if(color.equals("Yellow"))
+                        karResultTV.setTextColor(Color.YELLOW);
+                    else if(color.equals("Red"))
+                        karResultTV.setTextColor(Color.RED);
                     else
-                        karResultTV.setTextColor(ContextCompat.getColor(getContext(), android.R.color.black));
+                        karResultTV.setTextColor(Color.BLACK);
                 });
 
         karSportBTN.setOnClickListener(v -> {

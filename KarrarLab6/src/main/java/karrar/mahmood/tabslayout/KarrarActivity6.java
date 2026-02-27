@@ -7,9 +7,12 @@ package karrar.mahmood.tabslayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
+
 import android.os.Bundle;
+
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
+
 import java.util.ArrayList;
 
 public class KarrarActivity6 extends AppCompatActivity {
@@ -34,6 +37,7 @@ public class KarrarActivity6 extends AppCompatActivity {
                         tab.setText(getString(R.string.tab1));
                     else
                         tab.setText(getString(R.string.tab2));
-                }).attach();
+                }
+        ).attach();
     }
 }
